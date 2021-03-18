@@ -6,4 +6,7 @@ class DogsController < ApplicationController
         # render :index 
     end
     
+    def show
+        @dog = Dog.find(params[:id])
+    end
 end
