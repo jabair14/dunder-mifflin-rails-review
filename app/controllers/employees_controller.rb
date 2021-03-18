@@ -8,4 +8,8 @@ class EmployeesController < ApplicationController
         @employee = Employee.find(params[:id])
     end
     
+    def new
+        @employee = Employee.new
+
+    end
 end
