@@ -1,5 +1,7 @@
 <h1> Employee Show Page </h1>
 
+<%= button_to "Edit Employee", employee_path(@employee), method: post%>
+
 <h2><%= @employee.first_name %></h2> <br>
 <h3><%= @employee.last_name %></h3> <br>
 <h4><%= @employee.alias %></h4> <br>
@@ -7,3 +9,5 @@
 <%= @employee.office %><br>
 <%= @employee.dog.name %><br>
 <img src="<%= @employee.img_url%>" 
+
+
